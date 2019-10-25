@@ -1,0 +1,8 @@
+include ':app'
+rootProject.name='Kemas Native'
+
+setBinding(new Binding([gradle: this]))
+evaluate(new File(
+        settingsDir.parentFile,
+        'kemas-module\\.android\\include_flutter.groovy'
+))
